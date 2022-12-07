@@ -1,0 +1,58 @@
+.about {
+    padding: 94px 0px;
+
+    &__container {
+        width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__advantages {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    &__advantages {
+       
+    
+    }
+
+    &__item{
+
+         }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+        
+    }
+
+    &__items {
+         width: 270px;
+            height: 120px;
+            background-color: #F5F4FA;
+            background-position: bottom;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            padding: 25px 100px; 
+        
+    }
+
+    &__advantages-icon {
+    }
+
+    &__title {
+        font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: #212121;
+            margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+            line-height: 1.71;
+    }
+}
+
