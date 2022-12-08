@@ -1,5 +1,5 @@
 .clients {
-        padding: 94px 0px;
+    padding: 94px 0px;
 
     &__container {
         width: 1200px;
@@ -19,28 +19,31 @@
 
     &__list {
         display: flex;
-            justify-content: space-between;
+        justify-content: space-between;
     }
 
     &__item {
-        width: 100px;
+        color: #afb1b8;
     }
 
     &__link {
         display: inline-block;
-            width: 170px;
-            height: 92px;
-            border: 1px solid #AFB1B8;
-            border-radius: 4px;
-            padding: 16px 32px;
-            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            color: #AFB1B8;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        padding: 16px 32px;
+        transition: border 250ms $cubic-bezier, color 250ms $cubic-bezier;
+        color: #afb1b8;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        border: 1px solid $link-active-color;
+        color: $link-active-color;
     }
 
     &__icon {
+        fill: currentColor;
     }
 }
-.container{
-
-}
-

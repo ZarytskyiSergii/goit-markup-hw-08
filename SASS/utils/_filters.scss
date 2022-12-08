@@ -1,0 +1,58 @@
+.filters {
+    padding: 94px 0px;
+
+    &__container {
+        width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__list {
+        display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 50px;
+    }
+
+    &__item {
+    }
+
+    &__button {
+    }
+
+    &__button--focused {
+    }
+}
+
+.container {
+}
+
+.visually-hidden {
+}
+
+.button {
+}
+
+.projects {
+    &__item {
+    }
+
+    &__item--focused {
+    }
+
+    &__thumb {
+    }
+
+    &__text {
+    }
+
+    &__image {
+    }
+
+    &__info {
+    }
+
+    &__titles {
+    }
+}
