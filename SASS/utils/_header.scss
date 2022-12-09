@@ -1,11 +1,5 @@
-.page-header {
-    &__container {
-        width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
 
+.page-header {
     &__header-box {
         display: flex;
         align-items: center;
@@ -136,6 +130,13 @@
     }
 }
 
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .logo {
     font-family: $logo-font;
     font-weight: 700;
@@ -143,7 +144,6 @@
     text-decoration: none;
     color: $logo-first-part;
 }
-
 
 .logo--header-last-part {
     color: $logo-last-part;

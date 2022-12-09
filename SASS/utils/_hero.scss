@@ -1,53 +1,49 @@
 .hero {
     padding: 180px 0px 220px 0px;
-        max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        background-color: #2F303A;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-    &__container {
-        width: 1200px;
-            padding: 0 15px;
-            margin: 0 auto;
-            box-sizing: border-box;
-    }
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #2f303a;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &__title {
         font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            margin-bottom: 30px;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 30px;
     }
 
     &__button {
         font-family: inherit;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.9;
-            letter-spacing: 0.06em;
-            color: #FFFFFF;
-            background-color: $button-main-color;
-            padding: 10px 32px;
-            border-radius: 4px;
-            border-style: none;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        background-color: $button-main-color;
+        padding: 10px 32px;
+        border-radius: 4px;
+        border-style: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__button:hover,
-    &__button:focus{
+    &__button:focus {
         background-color: $button-focused-color;
     }
 }
 
-.button {}
-
-.button--focused {}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}

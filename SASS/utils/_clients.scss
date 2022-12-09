@@ -1,13 +1,6 @@
 .clients {
     padding: 94px 0px;
-
-    &__container {
-        width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
+    
     &__title {
         font-weight: 700;
         font-size: 36px;
@@ -46,4 +39,11 @@
     &__icon {
         fill: currentColor;
     }
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }

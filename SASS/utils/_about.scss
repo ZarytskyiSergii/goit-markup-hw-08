@@ -1,23 +1,13 @@
 .about {
     padding: 94px 0px;
 
-    &__container {
-        width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
+    
     &__advantages {
     display: flex;
     justify-content: space-between;
     }
 
-    &__advantages {
-       
     
-    }
-
     &__item{
 
          }
@@ -38,8 +28,8 @@
         
     }
 
-    &__advantages-icon {
-    }
+    // &__advantages-icon {
+    // }
 
     &__title {
         font-weight: 700;
@@ -56,3 +46,9 @@
     }
 }
 
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}

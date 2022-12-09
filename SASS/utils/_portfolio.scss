@@ -1,13 +1,6 @@
 .portfolio {
     padding-bottom: 94px;
-
-    &__container {
-        width: 1200px;
-            padding: 0 15px;
-            margin: 0 auto;
-            box-sizing: border-box;
-    }
-
+   
     &__title {
         font-weight: 700;
             font-size: 36px;
@@ -22,10 +15,7 @@
             justify-content: space-between;
     }
 
-    &__item {}
-
-    &__image {}
-
+    
     &__leyer {
         display: flex;
             justify-content: center;
@@ -44,3 +34,9 @@
     }
 }
 
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
