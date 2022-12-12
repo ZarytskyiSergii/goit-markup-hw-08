@@ -1,155 +1,162 @@
 .footer {
-    position: relative;
-    background-color: #2f303a;
-    padding: 60px 0;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 252px;
+  position: relative;
+  background-color: #2f303a;
+  padding: 60px 0;
+  // max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 252px;
 
-    &__container {
-        width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
+  &__container {
+    //mobile screen 0 - 480px
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    //tablet screen 768px//
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
     }
 
-    &__address-box {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+    //decktop screen 1200px//
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
     }
+  }
+
+  &__address-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 
 .address-box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .logo--footer-last-part {
-    color: $logo-last-footer-part;
+  color: $logo-last-footer-part;
 }
 
 .address {
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin-top: 20px;
+
+  &:hover {
+    color: $link-active-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__map {
+    color: #ffffff;
+    transition: color 250ms $cubic-bezier;
+  }
+  &__map:hover,
+  &__map:focus {
+    color: $link-active-color;
+  }
+
+  &__contact {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    margin-top: 20px;
-
-    &:hover {
-        color: $link-active-color;
-    }
-
-    &__item:not(:last-child) {
-        margin-bottom: 9px;
-    }
-
-    &__map {
-        color: #ffffff;
-        transition: color 250ms $cubic-bezier;
-    }
-    &__map:hover,
-    &__map:focus {
-        color: $link-active-color;
-    }
-
-    &__contact {
-        color: rgba(255, 255, 255, 0.6);
-        transition: color 250ms $cubic-bezier;
-    }
-    &__contact:hover,
-    &__contact:focus {
-        color: $link-active-color;
-    }
+    transition: color 250ms $cubic-bezier;
+  }
+  &__contact:hover,
+  &__contact:focus {
+    color: $link-active-color;
+  }
 }
 
 .social-media {
-    &__title {
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-bottom: 20px;
-    }
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
 }
 
 .social-list {
-    &__link--footer {
-        transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
-        color: #ffffff;
-        background-color: rgba(255, 255, 255, 0.1);
-    }
+  &__link--footer {
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
-    &__icon--footer {
-        fill: currentColor;
-    }
+  &__icon--footer {
+    fill: currentColor;
+  }
 }
 
 .form-sign {
-    &__label {
-        display: block;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-bottom: 20px;
-    }
+  &__label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
 
-    &__mail {
-        width: 358px;
-        height: 50px;
-        display: inline-block;
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        padding: 15px 16px;
-        color: #ffffff;
-        margin-right: 12px;
-    }
+  &__mail {
+    width: 358px;
+    height: 50px;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: #ffffff;
+    margin-right: 12px;
+  }
 
-    &__button {
-        position: relative;
-        width: 200px;
-        height: 50px;
-        display: inline-block;
-        background-color: $button-main-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border: none;
-        border-radius: 4px;
-        font-weight: 700;
-        font-size: 16px;
-        text-align: left;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: #ffffff;
-        padding: 10px 28px;
-        transition: background-color 250ms $cubic-bezier;
-    }
+  &__button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    background-color: $button-main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding: 10px 28px;
+    transition: background-color 250ms $cubic-bezier;
+  }
 
-    &__button:hover,
-    &__button:focus {
-        background-color: $button-focused-color;
-    }
+  &__button:hover,
+  &__button:focus {
+    background-color: $button-focused-color;
+  }
 
-    &__icon {
-        position: absolute;
-        left: 148px;
-        top: 13px;
-        fill: currentColor;
-    }
+  &__icon {
+    position: absolute;
+    left: 148px;
+    top: 13px;
+    fill: currentColor;
+  }
 }

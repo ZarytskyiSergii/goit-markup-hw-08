@@ -1,13 +1,27 @@
-
 .page-header {
     &__header-box {
-        display: flex;
-        align-items: center;
-        gap: 315px;
-        border-bottom: 1px solid #ececec;
-        max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
+        //mobile screen 0 - 480px
+        width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        //tablet screen 768px//
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
+
+        //decktop screen 1200px//
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            gap: 315px;
+            border-bottom: 1px solid #ececec;
+            width: 100vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__nav {
@@ -130,7 +144,6 @@
     }
 }
 
-
 .logo {
     font-family: $logo-font;
     font-weight: 700;
@@ -151,4 +164,23 @@
 .telephone-icon {
     fill: currentColor;
     transition: fill 250ms $cubic-bezier;
+}
+
+.container {
+    //mobile screen 0 - 480px
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    //tablet screen 768px//
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    //decktop screen 1200px//
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
 }
