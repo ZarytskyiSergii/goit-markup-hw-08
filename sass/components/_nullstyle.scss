@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 *,
@@ -28,12 +29,13 @@ footer,
 header,
 aside {
     display: block;
+    
 }
 
 html,
 body {
     height: 100%;
-    weight: 100%;
+    width: 100%;
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
@@ -87,5 +89,4 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
-
 /*---------------------*/

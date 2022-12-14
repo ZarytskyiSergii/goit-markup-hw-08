@@ -1,39 +1,33 @@
 .about {
-    @media screen and (max-width: 480px) {
-        width: 100%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        box-sizing: border-box;
-    }
+    width: 100%;
+    // padding-top: 60px;
+    padding-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     padding-left: 60px;
+    //     padding-right: 60px;
+    // }
 
-    @media screen and (min-width: 1200px) {
-        padding: 94px 0px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     padding: 94px 0px;
+    // }
 
     &__advantages {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-        }
+        // @media screen and (min-width: 768px) {
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
 
-        @media screen and (min-width: 1200px) {
-            display: flex;
-            justify-content: space-between;
-        }
+        // @media screen and (min-width: 1200px) {
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
     }
 
     &__item {
-        @media screen and (max-width: 480px) {
-            width: 100%;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            box-sizing: border-box;
-        }
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 60px;
     }
 
     &__item:not(:last-child) {
@@ -44,32 +38,25 @@
     }
 
     &__items {
-      
+        width: 100%;
+            height: 120px;
+            background-color: #F5F4FA;
+            background-position: bottom;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            padding: 25px 100px;
+    }
 
-        @media screen and (max-width: 480px) {
-            max-width: 270px;
-            width: 100%;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            padding-left: auto;
-            padding-right: auto;
-        }
-        width: 270px;
-        height: 120px;
-        background-color: #f5f4fa;
-        background-position: bottom;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px 100px;
+    &__advantages-icon {
+        display: block;
+        margin: 0px auto;
     }
 
     &__title {
         font-weight: 700;
         font-size: 14px;
         width: 100%;
-        text-align: center;
+        text-align: left;
         line-height: 1.14;
         text-transform: uppercase;
         color: #212121;
