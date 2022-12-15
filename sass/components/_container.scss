@@ -10,20 +10,22 @@ $breakpoint: (
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
     @media screen and (min-width: 480px) {
         width: 480px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
+        // padding-left: 15px;
+        // padding-right: 15px;
+        // margin-left: auto;
+        // margin-right: auto;
     }
 
     // tablet screen 768px
     @media screen and (min-width: 768px) {
-    width: 768px;
+        width: 768px;
+
     }
     //decktop screen 1200px//
     @media screen and (min-width: 1200px) {
-    width: 1200px;
+        width: 1200px;
     }
 }
