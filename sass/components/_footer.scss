@@ -1,40 +1,58 @@
 .footer {
   position: relative;
   background-color: #2f303a;
-  padding: 60px 0;
-  // max-width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
-  height: 252px;
 
-  &__container {
-    //mobile screen 0 - 480px
-    padding-left: 15px;
-      padding-right: 15px;
-      margin-left: auto;
-      margin-right: auto;
-
-    //tablet screen 768px//
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-    }
-
-    //decktop screen 1200px//
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-    }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    padding: 60px 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  &__address-box {
+  &__logo {
+    display: block;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: $logo-first-part;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer__container {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    padding-left: 76px;
+    padding-right: 76px;
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 165px;
+    row-gap: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    column-gap: 70px;
   }
 }
 
 .address-box {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+
+  @media screen and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .logo--footer-last-part {
@@ -48,12 +66,22 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-top: 20px;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
 
   &:hover {
     color: $link-active-color;
   }
 
+  &__item {
+    @media screen and (max-width: 1199.98px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 9px;
+    }
+  }
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -78,7 +106,18 @@
 }
 
 .social-media {
+  display: inline-block;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
+    display: inline-block;
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
@@ -87,6 +126,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
   }
 }
@@ -104,6 +145,21 @@
 }
 
 .form-sign {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-left: 23px;
+  }
+
   &__label {
     display: block;
     font-weight: 700;
@@ -112,20 +168,28 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
   }
 
   &__mail {
-    width: 358px;
     height: 50px;
-    display: inline-block;
+    display: block;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 16px;
     color: #ffffff;
-    margin-right: 12px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      width: 358px;
+      margin-bottom: 0px;
+      margin-right: 12px;
+    }
   }
 
   &__button {
@@ -144,6 +208,8 @@
     letter-spacing: 0.06em;
     color: #ffffff;
     padding: 10px 28px;
+    margin-right: auto;
+    margin-left: auto;
     transition: background-color 250ms $cubic-bezier;
   }
 

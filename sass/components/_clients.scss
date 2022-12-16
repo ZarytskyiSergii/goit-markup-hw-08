@@ -1,31 +1,52 @@
 .clients {
-    padding: 94px 0px;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
     &__title {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
         color: #212121;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
     }
 
     &__item {
         color: #afb1b8;
+        flex-basis: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+        }
     }
 
     &__link {
-        display: inline-block;
-        width: 170px;
-        height: 92px;
+        display: flex;
         border: 1px solid #afb1b8;
         border-radius: 4px;
-        padding: 16px 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         transition: border 250ms $cubic-bezier, color 250ms $cubic-bezier;
         color: #afb1b8;
     }
@@ -38,23 +59,7 @@
 
     &__icon {
         fill: currentColor;
-    }
-}
-
-.container {
-    //mobile screen 0 - 480px
-padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-    //tablet screen 768px//
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-
-    //decktop screen 1200px//
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
