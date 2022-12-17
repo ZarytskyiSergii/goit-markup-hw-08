@@ -33,6 +33,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms $cubic-bezier;
+    // overflow-y: scroll;
 
     &__modal {
         position: absolute;
