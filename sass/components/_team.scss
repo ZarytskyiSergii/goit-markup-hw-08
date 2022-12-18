@@ -51,8 +51,15 @@
         }
     }
 
+&__thumb {
+margin-bottom: 30px;
+}
+
     &__img {
-        margin-bottom: 30px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+       
     }
 
     &__name {
