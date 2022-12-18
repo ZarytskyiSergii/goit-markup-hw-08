@@ -38,7 +38,8 @@
                     <ul class="page-header__contacts">
                         <li class="page-header__item">
                             <a class="page-header__mail" href="mailto:info@devstudio.com">
-                                <svg class="mail-icon page-header__mail-icon" width="16px" height="12px">
+                                <svg class="mail-icon page-header__mail-icon">
+                                    <!-- width="16px" height="12px" -->
                                     <use href="./images/svg/icon.svg#envelope"></use>
                                 </svg>
                                 info@devstudio.com</a>
@@ -147,12 +148,15 @@
                     <li class="team__item">
                         <div class="team__thumb">
                             <picture>
-                                <source srcset="./images/igor-demjanenko_270x260.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/igor-demjanenko_270x260@2x.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/igor-demjanenko354x374.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/igor-demjanenko354x374@2x.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/igor-demjanenko_450x460.jpg" media="(min-width: 480px)" />
-                                <source srcset="./images/igor-demjanenko_450x460@2x.jpg" media="(min-width: 480px)" />
+                                <source
+                                    srcset="./images/igor-demjanenko_270x260.jpg 1x, ./images/igor-demjanenko_270x260@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/igor-demjanenko_354x374.jpg 1x, ./images/igor-demjanenko_354x374@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images/igor-demjanenko_450x460.jpg 1x, ./images/igor-demjanenko_450x460@2x.jpg 2x"
+                                    media="(min-width: 480px)" />
                                 <img class="team__img" src="./images/igor-demjanenko.jpg" alt="Фотографія" />
                             </picture>
 
@@ -189,15 +193,17 @@
                     <li class="team__item">
                         <div class="team__thumb">
                             <picture>
-                                <source srcset="./images/olga-repina_270x260.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/olga-repina_270x260@2x.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/olga-repina_354x374.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/olga-repina_354x374@2x.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/olga-repina_450x460.jpg" media="(min-width: 480px)" />
-                                <source srcset="./images/olga-repina_450x460@2x.jpg" media="(min-width: 480px)" />
+                                <source
+                                    srcset="./images/olga-repina_270x260.jpg 1x, ./images/olga-repina_270x260@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/olga-repina_354x374.jpg 1x, ./images/olga-repina_354x374@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images/olga-repina_450x460.jpg 1x, ./images/olga-repina_450x460@2x.jpg 2x"
+                                    media="(min-width: 480px)" />
                                 <img class="team__img" src="./images/olga-repina.jpg" alt="фото жінки" />
                             </picture>
-
                         </div>
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__position">Frontend Developer</p>
@@ -231,12 +237,15 @@
                     <li class="team__item">
                         <div class="team__thumb">
                             <picture>
-                                <source srcset="./images/mykola-tarasov_270x260.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/mykola-tarasov_270x260@2x.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/mykola-tarasov_354x374.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/mykola-tarasov_354x374@2x.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/mykola-tarasov_450x460.jpg" media="(min-width: 480px)" />
-                                <source srcset="./images/mykola-tarasov_450x460@2x.jpg" media="(min-width: 480px)" />
+                                <source
+                                    srcset="./images/mykola-tarasov_270x260.jpg 1x, ./images/mykola-tarasov_270x260@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/mykola-tarasov_354x374.jpg 1x, ./images/mykola-tarasov_354x374@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images/mykola-tarasov_450x460.jpg 1x, ./images/mykola-tarasov_450x460@2x.jpg 2x"
+                                    media="(min-width: 480px)" />
                                 <img class="team__img" src="./images/mykola-tarasov.jpg" alt="фото чоловіка" />
                             </picture>
 
@@ -273,13 +282,16 @@
                     <li class="team__item">
                         <div class="team__thumb">
                             <picture>
-                                <source srcset="./images/mykhailo-ermakov_270x260.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/mykhailo-ermakov_270x260@2x.jpg" media="(min-width: 1200px)" />
-                                <source srcset="./images/mykhailo-ermakov_354x374.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/mykhailo-ermakov_354x374@2x.jpg" media="(min-width: 768px)" />
-                                <source srcset="./images/mykhailo-ermakov_450x460" media="(min-width: 480px)" />
-                                <source srcset="./images/mykhailo-ermakov_450x460@2x.jpg" media="(min-width: 480px)" />
-                                <img class="team__img" src="./images/mykhailo-ermakov.jpg" alt="фото чоловіка" />
+                                <source
+                                    srcset="./images/mykhailo-ermakov_270x260.jpg 1x, ./images/mykhailo-ermakov_270x260@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/mykhailo-ermakov_354x374.jpg 1x, ./images/mykhailo-ermakov_354x374@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images/mykhailo-ermakov_450x460 1x, ./images/mykhailo-ermakov_450x460@2x.jpg 2x"
+                                    media="(min-width: 480px)" />
+                                <img class="team__img" src="./images/mykhailo-ermakov7.jpg" alt="фото чоловіка" />
                             </picture>
 
                         </div>

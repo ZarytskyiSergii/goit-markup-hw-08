@@ -273,6 +273,26 @@ body {
 .page-header__mail-icon, .page-header__telephone-icon {
   margin-right: 10px;
 }
+.page-header__mail-icon {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+}
+.page-header__telephone-icon {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__telephone-icon {
+    width: 16px;
+    height: 12px;
+  }
+}
 .page-header__telephone {
   display: -webkit-box;
   display: -ms-flexbox;
