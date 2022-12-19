@@ -133,9 +133,9 @@
     }
 
     &__info {
-        border-bottom: 1px solid #eeeeee;
-        border-left: 1px solid #eeeeee;
-        border-right: 1px solid #eeeeee;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
         padding: 20px 24px;
         flex-grow: 1;
     }
@@ -163,4 +163,5 @@
 
 .projects__link {
     flex-grow: 1;
+    border-bottom: 3px solid red;
 }
