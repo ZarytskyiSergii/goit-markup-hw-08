@@ -2,14 +2,14 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфоліо</title>
 </head>
 
@@ -51,9 +51,7 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
-
         </div>
     </header>
     <main>
@@ -61,23 +59,44 @@
             <div class="container">
                 <h1 class="visually-hidden">Фільтри</h1>
                 <ul class="filters__list">
-                    <li class="filters__item"><button class="filters__button" type="button">Усі</button></li>
-                    <li class="filters__item"><button class="filters__button" type="button">Веб-сайти</button></li>
-                    <li class="filters__item"><button class="filters__button" type="button">Додатки</button></li>
-                    <li class="filters__item"><button class="filters__button" type="button">Дизайн</button></li>
-                    <li class="filters__item"><button class="filters__button" type="button">Маркетинг</button></li>
+                    <li class="filters__item">
+                        <button class="filters__button" type="button">Усі</button>
+                    </li>
+                    <li class="filters__item">
+                        <button class="filters__button" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filters__item">
+                        <button class="filters__button" type="button">Додатки</button>
+                    </li>
+                    <li class="filters__item">
+                        <button class="filters__button" type="button">Дизайн</button>
+                    </li>
+                    <li class="filters__item">
+                        <button class="filters__button" type="button">Маркетинг</button>
+                    </li>
                 </ul>
                 <ul class="projects">
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p>
-                                <img class="projects__image" src="./images/project1.jpg" width="370"
-                                    alt="лептоп з зображенням веб-сайту">
-
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project1_370x294.jpg 1x, ./images/project1_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project1_354x294.jpg 1x, ./images/project1_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project1_450x294.jpg 1x, ./images/project1_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project1.jpg"
+                                        alt="лептоп з зображенням веб-сайту" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Технокряк</h2>
@@ -86,14 +105,26 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p>
-                                <img class="projects__image" src="./images/project2.jpg" width="370"
-                                    alt="баскетболісти змагаються за м'яч">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project2_370x294.jpg 1x, ./images/project2_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project2_354x294.jpg 1x, ./images/project2_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project2_450x294.jpg 1x, ./images/project2_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project2.jpg"
+                                        alt="баскетболісти змагаються за м'яч" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Постер New Orlean vs Golden Star</h2>
@@ -102,14 +133,25 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p>
-                                <img class="projects__image" src="./images/project3.jpg" width="370"
-                                    alt="риба з назвою ресторану">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project3_370x294.jpg 1x, ./images/project3_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project3_354x294.jpg 1x, ./images/project3_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project3_450x294.jpg 1x, ./images/project3_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project3.jpg" alt="риба з назвою ресторану" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Ресторан Seafood</h2>
@@ -118,13 +160,25 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p>
-                                <img class="projects__image" src="./images/project4.jpg" width="370" alt="навушники">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project4_370x294.jpg 1x, ./images/project4_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project4_354x294.jpg 1x, ./images/project4_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project4_450x294.jpg 1x, ./images/project4_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project4.jpg" alt="навушники" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Проєкт Prime</h2>
@@ -133,14 +187,26 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p>
-                                <img class="projects__image" src="./images/project5.jpg" width="370"
-                                    alt="дві коробки для упаковки">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project5_370x294.jpg 1x, ./images/project5_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project5_354x294.jpg 1x, ./images/project5_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project5_450x294.jpg 1x, ./images/project5_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project5.jpg"
+                                        alt="дві коробки для упаковки" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Проєкт Boxes</h2>
@@ -148,14 +214,26 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__itemd">
-                        <a href="">
+                    <li class="projects__item">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p>
-                                <img class="projects__image" src="./images/project6.jpg" width="370" alt="моноблок епл">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project6_370x294.jpg 1x, ./images/project6_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project6_354x294.jpg 1x, ./images/project6_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project6_450x294.jpg 1x, ./images/project6_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project6.jpg" alt="моноблок епл" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Inspiration has no Borders</h2>
@@ -164,13 +242,26 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p><img class="projects__image"
-                                    src="./images/project7.jpg" width="370" alt="розгорнута книжка з зображенням">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project7_370x294.jpg 1x, ./images/project7_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project7_354x294.jpg 1x, ./images/project7_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project7_450x294.jpg 1x, ./images/project7_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project7.jpg"
+                                        alt="розгорнута книжка з зображенням" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Видання Limited Edition</h2>
@@ -179,13 +270,26 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p><img class="projects__image"
-                                    src="./images/project8.jpg" width="370" alt="бірка з написом лейбл тег">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project8_370x294.jpg 1x, ./images/project8_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project8_354x294.jpg 1x, ./images/project8_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project8_450x294.jpg 1x, ./images/project8_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project8.jpg"
+                                        alt="бірка з написом лейбл тег" />
+                                </picture>
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Проєкт LAB</h2>
@@ -194,13 +298,28 @@
                         </a>
                     </li>
                     <li class="projects__item">
-                        <a href="">
+                        <a class="projects__link" href="">
                             <div class="projects__thumb">
-                                <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                    функціоналу та сервісів. Все це
-                                    дозволить відвідувачу отримати
-                                    вичерпні відомості про компанію чи приватну особу.</p><img class="projects__image"
-                                    src="./images/project9.jpg" width="370" alt="лептоп з зображенням вебсайту">
+                                <p class="projects__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                    приватну особу.
+                                </p>
+                                <picture>
+                                    <source
+                                        srcset="./images/project9_370x294.jpg 1x, ./images/project9_370x294@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/project9_354x294.jpg 1x, ./images/project9_354x294@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/project9_450x294.jpg 1x, ./images/project9_450x294@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img class="team__img" src="../images/project9.jpg"
+                                        alt="лептоп з зображенням вебсайту" />
+                                </picture>
+                                <!-- <img class="projects__image" src="./images/project9.jpg"
+                                    alt="лептоп з зображенням вебсайту"> -->
                             </div>
                             <div class="projects__info">
                                 <h2 class="projects__titles">Growing Business</h2>
