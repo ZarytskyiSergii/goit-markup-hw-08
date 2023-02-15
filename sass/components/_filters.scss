@@ -133,12 +133,13 @@
     }
 
     &__info {
-        border-bottom: 3px solid black;
-        border-left: 3px solid black;
-        border-right: 3px solid black;
+        border-bottom: 1px solid #eeeeee;
+        border-left: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
         padding: 20px 24px;
         flex-grow: 1;
     }
+    
 
     &__titles {
         font-weight: 700;
@@ -159,9 +160,4 @@
     @media screen and (max-width: 767.98px) {
         margin-bottom: 30px;
     }
-}
-
-.projects__link {
-    flex-grow: 1;
-    border-bottom: 3px solid red;
 }
