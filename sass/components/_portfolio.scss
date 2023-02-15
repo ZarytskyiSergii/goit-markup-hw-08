@@ -1,38 +1,42 @@
 .portfolio {
-    @media (max-width: 1199.98px) {
-        display: none;
-    }
-
     padding-bottom: 94px;
-
+   
     &__title {
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        color: #212121;
-        margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            color: #212121;
+            margin-bottom: 50px;
     }
 
     &__examples {
         display: flex;
-        justify-content: space-between;
+            justify-content: space-between;
     }
 
+    
     &__leyer {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        position: absolute;
-        width: 370px;
-        height: 70px;
-        background-color: rgba(47, 48, 58, 0.8);
-        transform: translateY(-72px);
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            position: absolute;
+            width: 370px;
+            height: 70px;
+            background-color: rgba(47, 48, 58, 0.8);
+            transform: translateY(-72px);
     }
 }
+
+// .container {
+//     width: 1200px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+//     box-sizing: border-box;
+// }

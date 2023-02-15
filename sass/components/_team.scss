@@ -1,36 +1,24 @@
 .team {
     background: #f5f4fa;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    padding: 94px 0;
+    // max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    
     &__title {
         font-weight: 700;
-        font-size: 28px;
+        font-size: 36px;
         line-height: 1.17;
         text-align: center;
         color: #212121;
-        margin-bottom: 30px;
-
-        @media screen and (min-width: 1200px) {
-            font-size: 36px;
-            margin-bottom: 50px;
-        }
+        margin-bottom: 50px;
     }
 
     &__cards {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 30px;
-        }
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        list-style: none;
     }
 
     &__item {
@@ -38,28 +26,10 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
-        @media screen and (max-width: 767.98px) {
-            margin-bottom: 30px;
-        }
-
-        @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 30px) / 2);
-        }
-
-        @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - 90px) / 4);
-        }
     }
 
-&__thumb {
-margin-bottom: 30px;
-}
-
     &__img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-       
+        margin-bottom: 30px;
     }
 
     &__name {
@@ -74,19 +44,34 @@ margin-bottom: 30px;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
-        margin-bottom: 16px;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
     }
 }
+
+// .container {
+//     width: 1200px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+//     box-sizing: border-box;
+// }
 
 .social-list {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    margin-top: 16px;
 
     &__item {
         width: 44px;
         height: 44px;
-        color: #afb1b8;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
     }
 
     &__link {
@@ -97,7 +82,7 @@ margin-bottom: 30px;
         align-items: center;
         border-radius: 50%;
         transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
-        color: inherit;
+        color: #afb1b8;
         background-color: $main-background-color;
     }
 
